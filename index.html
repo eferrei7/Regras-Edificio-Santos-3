@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Convivência - Ed. Santos 3</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        header p { font-weight: 300; opacity: 0.9; }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--accent);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .card.prohibited i { color: var(--secondary); }
+
+        .card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--primary); }
+
+        .illustration {
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #eee;
+        }
+
+        /* Cores das Seções */
+        .section-title {
+            grid-column: 1 / -1;
+            margin-top: 1rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .whatsapp-alert {
+            background: #25d366;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EDIFÍCIO SANTOS 3</h1>
+    <p>Nova Itaparica, Vila Velha - ES</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <p>Estamos reforçando algumas regras de convivência e contamos com a colaboração de todos os moradores para um ambiente mais harmonioso.</p>
+    </section>
+
+    <div class="grid">
+        <h2 class="section-title"><i class="fas fa-bullhorn"></i> Orientações Gerais</h2>
+
+        <!-- Bicicletas -->
+        <div class="card prohibited">
+            <div class="illustration" style="background-image: url('https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&q=80&w=400')"></div>
+            <i class="fas fa-bicycle"></i>
+            <h3>Bicicletas</h3>
+            <p><strong>Não prenda no corrimão.</strong> Guarde-as obrigatoriamente dentro do seu apartamento para manter a segurança e estética.</p>
+        </div>
+
+        <!-- Limpeza -->
+        <div class="card">
+            <i class="fas fa-broom"></i>
+            <h3>Limpeza Semanal</h3>
+            <p>Mantenha o corredor e as escadas do seu andar limpos. Realize a limpeza ao menos uma vez por semana.</p>
+        </div>
+
+        <!-- Portão -->
+        <div class="card">
+            <i class="fas fa-door-closed"></i>
+            <h3>Segurança</h3>
+            <p>Mantenha o portão principal sempre fechado. A segurança de todos depende deste gesto simples.</p>
+        </div>
+
+        <!-- Obstrução -->
+        <div class="card prohibited">
+            <i class="fas fa-box-open"></i>
+            <h3>Corredores Livres</h3>
+            <p>Não deixe objetos (móveis, lixo, caixas) nos corredores. A passagem deve estar sempre livre.</p>
+        </div>
+
+        <!-- Janelas -->
+        <div class="card prohibited">
+            <i class="fas fa-trash-alt"></i>
+            <h3>Lixo e Objetos</h3>
+            <p>É estritamente proibido jogar qualquer objeto pela janela. Utilize as lixeiras adequadas.</p>
+        </div>
+
+        <!-- Barulho -->
+        <div class="card">
+            <i class="fas fa-volume-mute"></i>
+            <h3>Lei do Silêncio</h3>
+            <p><strong>Após 22h:</strong> Sem som alto.<br><strong>Após 20h:</strong> Proibido uso de furadeiras ou ferramentas ruidosas.</p>
+        </div>
+
+        <!-- Mudanças -->
+        <div class="card">
+            <i class="fas fa-truck-loading"></i>
+            <h3>Mudanças</h3>
+            <p>Devem ser realizadas no período diurno, com encerramento até às <strong>17:00h</strong>.</p>
+        </div>
+
+        <h2 class="section-title"><i class="fas fa-file-invoice-dollar"></i> Obrigações Mensais</h2>
+
+        <!-- Manutenção -->
+        <div class="card">
+            <i class="fas fa-faucet"></i>
+            <h3>Evite Desperdícios</h3>
+            <p>Verifique vazamentos em descargas e torneiras. O consumo excessivo impacta na conta de todos.</p>
+        </div>
+
+        <!-- Pagamentos -->
+        <div class="card">
+            <i class="fas fa-calendar-check"></i>
+            <h3>Prazos e WhatsApp</h3>
+            <p>A partir do dia 10, confira as contas de água, energia da bomba e limpeza no grupo.</p>
+            <div class="whatsapp-alert"><i class="fab fa-whatsapp"></i> Fique atento ao Grupo!</div>
+        </div>
+
+        <!-- Legislação -->
+        <div class="card">
+            <i class="fas fa-gavel"></i>
+            <h3>Regulamentação</h3>
+            <p>As despesas devem ser pagas independente da ocupação do imóvel, conforme a legislação de condomínios.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Edifício Santos 3 — Convivência e organização dependem de todos.</p>
+    <p>© 2026 Vila Velha, ES</p>
+</footer>
+
+</body>
+</html>
